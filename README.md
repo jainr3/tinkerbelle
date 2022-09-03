@@ -87,3 +87,11 @@ swatches: [
 ```
 
 Typing a description in the Audio input box will play the first result from [https://freesound.org/](https://freesound.org/). The stop button stops playback. Try typing `gong` or `barking`.
+
+### Modifications to original code
+
+I added some code to have the tool also allow speech to come out of the tinkerbelle device. I referenced a tutorial from [here](https://www.section.io/engineering-education/text-to-speech-in-javascript/).
+
+Additionally, I added a few presets for some of the scenarios which allow me to do multiple actions at the same time (eg. blinking lights and horn sound). The new UI looks like the following:
+
+<img src="imgs/tinkerbelle_tool_modifications.png" alt="Tinkerbelle Tool Modifications">

@@ -31,6 +31,50 @@ def handle_audio(val):
 def handle_pause(val):
 	broadcast('pauseAudio', val)
 
+@socketio.on('words')
+def handle_words(val):
+	broadcast('words', val)
+
+@socketio.on('pauseWords')
+def handle_words(val):
+	broadcast('pauseWords', val)
+
+@socketio.on('scenario1_1')
+def scenario1_1():
+	broadcast('scenario1_1', None)
+
+@socketio.on('scenario1_2')
+def scenario1_2():
+	broadcast('scenario1_2', None)
+
+@socketio.on('scenario1_3')
+def scenario1_3():
+	broadcast('scenario1_3', None)
+
+@socketio.on('scenario2_1')
+def scenario1_1():
+	broadcast('scenario2_1', None)
+
+@socketio.on('scenario2_2')
+def scenario1_2():
+	broadcast('scenario2_2', None)
+
+@socketio.on('scenario2_3')
+def scenario1_3():
+	broadcast('scenario2_3', None)
+
+@socketio.on('scenario3_1')
+def scenario1_1():
+	broadcast('scenario3_1', None)
+
+@socketio.on('scenario3_2')
+def scenario1_2():
+	broadcast('scenario3_2', None)
+
+@socketio.on('scenario3_3')
+def scenario1_3():
+	broadcast('scenario3_3', None)
+
 
 @app.route('/')
 def index():
